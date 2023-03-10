@@ -9,8 +9,10 @@
   </head>
   <body>
     <h1>My First Web Page</h1>
-    <font size="5" face="arial" color="red">Lorem Ipsum Dolar Sit Amet.</font>
-    <p>
+    <font size="5" face="arial" color="red"
+      >This web page was created using HTML.</font
+    >
+    <p id="para">
       This is my First
       <abbr title="HyperText Markup Language">HTML</abbr> Document
     </p>
@@ -25,11 +27,18 @@
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     </p>
+
     <a href="https://www.w3schools.com/html/">HTML Tutorials</a>
-    <img
-      src="https://imgs.search.brave.com/n8HjyR7Mfg17x1Ighbm_WYG941UUxmXBObbbferD4lc/rs:fit:570:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/Ym4tTktiUlJ0TDY4/QU1vWmo0cHFBSGFH/SyZwaWQ9QXBp"
-      alt="web img"
-    />
+
+    <figure>
+      <img
+        src="https://imgs.search.brave.com/n8HjyR7Mfg17x1Ighbm_WYG941UUxmXBObbbferD4lc/rs:fit:570:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Z/Ym4tTktiUlJ0TDY4/QU1vWmo0cHFBSGFH/SyZwaWQ9QXBp"
+        alt="web img"
+      />
+      <figcaption>figure 1: hyperlink image</figcaption>
+    </figure>
+
+    <hr width="80%" align="center" />
 
     <dl>
       <dt>HTML</dt>
@@ -41,12 +50,18 @@
     </dl>
 
     <!-- table -->
-    <table border="1">
+    <table border="1" align="right">
+      <caption>
+        Table Caption
+      </caption>
       <thead>
-        <td>Name</td>
-        <td>Mobile</td>
-        <td>Courses</td>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Courses</th>
       </thead>
+      <tfoot>
+        <td colspan="3">This is the footer</td>
+      </tfoot>
       <tbody>
         <tr>
           <td>Janith</td>
@@ -64,9 +79,17 @@
           <td>BIT</td>
         </tr>
       </tbody>
-      <tfoot>
-        <td colspan="3">This is the footer</td>
-      </tfoot>
     </table>
+
+    <!-- form -->
+    <form action="#">
+      <input type="email" name="email" id="email" /><br />
+      <input type="date" name="date" id="date" /><br />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <a href="#para">Go to first paragraph</a><br />
+    <a href="test.html">Go to test.html file</a><br />
+    <a href="test.html#para">Go to last para of test.html file</a>
   </body>
 </html>
