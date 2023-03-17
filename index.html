@@ -12,7 +12,7 @@
     <font size="5" face="arial" color="red"
       >This web page was created using HTML.</font
     >
-    <p id="para">
+    <p name="para">
       This is my First
       <abbr title="HyperText Markup Language">HTML</abbr> Document
     </p>
@@ -50,7 +50,7 @@
     </dl>
 
     <!-- table -->
-    <table border="1" align="right">
+    <table border="1" align="center">
       <caption>
         Table Caption
       </caption>
@@ -83,9 +83,12 @@
 
     <!-- form -->
     <form action="#">
-      <input type="email" name="email" id="email" /><br />
-      <input type="date" name="date" id="date" /><br />
-      <input type="reset" value="Reset" />
+      <fieldset>
+        <legend>fieldset</legend>
+        <input type="email" name="email" id="email" /><br />
+        <input type="date" name="date" id="date" /><br />
+        <input type="reset" value="Reset" />
+      </fieldset>
     </form>
 
     <a href="#para">Go to first paragraph</a><br />
